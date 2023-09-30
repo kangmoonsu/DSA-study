@@ -5,6 +5,6 @@ class Solution {
         String abStr = Integer.toString(a) + Integer.toString(b);
         int a_b = Integer.valueOf(abStr);
         
-        return a_b >= 2*a*b ? a_b : 2*a*b;
+        return a_b >= 2 * a * b ? a_b : 2 * a * b;
     }
 }
