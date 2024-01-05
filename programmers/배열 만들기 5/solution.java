@@ -3,16 +3,16 @@
 class Solution {
     public int[] solution(String[] intStrs, int k, int s, int l) {
         int[] a = new int[intStrs.length];
-        int count = 0;
+        int len = 0;
 
         for (int i = 0; i < intStrs.length; i++) {
             a[i] = Integer.parseInt(intStrs[i].substring(s, s + l));
             if (a[i] > k) {
-                count++;
+                len++;
             }
         }
 
-        int[] result = new int[count];
+        int[] result = new int[len];
         int index = 0;
 
         for (int i = 0; i < intStrs.length; i++) {
