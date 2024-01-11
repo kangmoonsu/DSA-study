@@ -6,7 +6,6 @@ class Solution {
         char a = arr[num1];
         arr[num1] = arr[num2];
         arr[num2] = a;
-        
         return new String(arr);
     }
 }
