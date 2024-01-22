@@ -8,14 +8,14 @@ class Solution {
         int[] copy = new int[emergency.length];
         int[] answer = new int[emergency.length];
         
-        for(int i = 0; i <= emergency.length - 1; i++) {
+        for(int i = 0; i < emergency.length; i++) {
             copy[i] = emergency[i];
         }
         
         Arrays.sort(copy);
         
-        for(int i = 0; i <= emergency.length - 1; i++) {
-            for(int j = 0; j <= emergency.length - 1; j++) {
+        for(int i = 0; i < emergency.length; i++) {
+            for(int j = 0; j < emergency.length; j++) {
                 if(copy[i] == emergency[j]) {
                     answer[j] = emergency.length - i;
                 }
