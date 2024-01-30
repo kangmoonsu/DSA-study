@@ -6,7 +6,9 @@ class Solution {
         
         int[] number = new int[n+1];
         
-        for(int i = 0; i < n+1; i++) number[i] = i;
+        for(int i = 0; i < n+1; i++) {
+            number[i] = i;
+        }
         
         for(int i = 2; i < n+1; i++) {
             if(number[i] != 0) {
@@ -17,7 +19,9 @@ class Solution {
         }
         
         for(int i = 2; i < n+1; i++) {
-            if(number[i] != 0) answer++;
+            if(number[i] != 0) {
+                answer++;
+            }
         }
         
         return answer;
