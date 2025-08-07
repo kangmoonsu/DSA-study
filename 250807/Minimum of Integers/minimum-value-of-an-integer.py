@@ -1,6 +1,6 @@
 a, b, c = map(int, input().split())
 
-def add(a,b,c):
+def min(a,b,c):
     return min(a,b,c)
 
-print(add(a,b,c))
+print(min(a,b,c))
