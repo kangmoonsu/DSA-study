@@ -3,14 +3,17 @@ a = int(a)
 c = int(c)
 r = 0
 
-if o == "+":
-    r = a+c
-elif o == "-":
-    r = a-c
-elif o == "/":
-    r = a//c
-elif o == "*":
-    r = a*c
+def operate(a,o,c):
+    if o == "+":
+      r = a+c
+    elif o == "-":
+        r = a-c
+    elif o == "/":
+        r = a//c
+    elif o == "*":
+        r = a*c
+    else:
+        return False
 
 
-print(a,o,c,"=",r)
+print(operate(a,o,c))
