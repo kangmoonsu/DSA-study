@@ -15,3 +15,4 @@ def lcm(arr):
             return d * lcm(arr)
 
 print(lcm(arr))
+
