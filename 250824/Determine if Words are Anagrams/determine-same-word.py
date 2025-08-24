@@ -7,6 +7,10 @@ word22 = sorted(word2)
 
 
 def check(word1,word2):
+
+    if len(word1) != len(word2):
+        return False
+
     for e1, e2 in zip(word1, word2):
         if e1 != e2:
             return False
