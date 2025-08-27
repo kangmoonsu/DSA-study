@@ -9,7 +9,7 @@ class User:
 users = []
 
 for _ in range(5):
-    code_name, score = tuple(input().split())
+    code_name, score = input().split()
     users.append(User(code_name, int(score)))
 
 
