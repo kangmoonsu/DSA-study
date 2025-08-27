@@ -9,6 +9,6 @@ class s007:
 
 op = s007(secret_code, meeting_point, time)
 
-print("secret code : " + op.secret_code)
-print("meeting point : " + op.meeting_point)
-print("time : " + str(op.time))
+print("secret code :", op.secret_code)
+print("meeting point :", op.meeting_point)
+print("time :", op.time)
