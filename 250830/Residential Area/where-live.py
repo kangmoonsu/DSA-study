@@ -13,6 +13,8 @@ for _ in range(n):
     p = Person(n_i,s_i,r_i)
     people_list.append(p)
 
+sorted_people = sorted(people_list, key=lambda person: person.n)
+
 # Please write your code here.
 print("name",people_list[n-1].n)
 print("addr",people_list[n-1].a)
