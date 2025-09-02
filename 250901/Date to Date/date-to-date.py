@@ -6,8 +6,8 @@ days = 0
 for i in range(m1+1,m2):
     days += num_of_days[i]
 
-d1 = num_of_days[m1] - d1
+days += num_of_days[m1] - d1 + 1
 
-days += d1 + d2 + 1
+days += d2
 
 print(days)
