@@ -9,8 +9,8 @@ if m1 == m2:
 elif m1 > m2:
     for i in range (m2,m1):
         total += num_of_days[i]
-    total -= d1
-    total += d2
+    total -= d2
+    total += d1
     date = total%7
 else:
     for i in range (m1,m2):
