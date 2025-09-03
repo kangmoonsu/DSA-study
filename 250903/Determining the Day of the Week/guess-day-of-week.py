@@ -5,12 +5,12 @@ days = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
 
 total = 0
 if m1 == m2:
-    date = (d2-d1)//7
+    date = (d2-d1)%7
 else:
     for i in range (m1,m2):
         total += num_of_days[i]
     total -= d1
     total += d2
-    date = total//7
+    date = total%7
 
 print(days[date])
