@@ -6,6 +6,12 @@ days = ["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
 total = 0
 if m1 == m2:
     date = (d2-d1)%7
+elif m1 > m2:
+    for i in range (m2,m1):
+        total += num_of_days[i]
+    total -= d1
+    total += d2
+    date = total%7
 else:
     for i in range (m1,m2):
         total += num_of_days[i]
