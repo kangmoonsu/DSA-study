@@ -1,13 +1,11 @@
-a, b, c = map(int, input().split())
+# Declare variables and take input
+a, b, c = tuple(map(int, input().split()))
 
-total = (a - 11)*60*24
-total += (b-11)*60
-if b < 11 or (b == 11 and c < 11):
-    total = -1
-else if b == 11:
-    total += c-11
-elif b > 11:
-    total += c+49
+# Calculate the difference
+diff = (a * 24 * 60 + b * 60 + c) - (11 * 24 * 60 + 11 * 60 + 11)
 
-print(total)    
-
+# Output
+if diff < 0:
+    print(-1)
+else:
+    print(diff)
