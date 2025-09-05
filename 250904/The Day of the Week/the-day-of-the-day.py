@@ -15,7 +15,7 @@ start_day = (totalDay(m1, d1) - 1) % 7
 elapsed_day = totalDay(m2,d2) - totalDay(m1,d1) + 1
 
 count = 0
-for i in range(elapsed_day):
+for i in range(elapsed_day+1):
     index = (start_day + i) % 7
     day = week[index]
     if day == A:
