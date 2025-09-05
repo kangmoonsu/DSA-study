@@ -6,11 +6,9 @@ week = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 def totalDay(m,d):
     num = 0
-    # for i in range(1, m)은 i가 1부터 m-1까지 반복합니다.
-    # num_of_days[i]를 더하여 각 월의 일수를 더해야 합니다.
     for i in range(1, m):
         num += num_of_days[i]
-    num += d
+    num+=d
     return num
 
 start_day = (totalDay(m1, d1) - 1) % 7
