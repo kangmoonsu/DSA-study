@@ -6,3 +6,7 @@ for i in l:
     num = num * 2 + i
 
 print(num)
+
+# binary = input()
+
+# print(int(binary, 2))
