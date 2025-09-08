@@ -1,7 +1,7 @@
 n = int(input())
 segments = [tuple(map(int, input().split())) for _ in range(n)]
 
-slot = [0] * 201
+slot = [0] * 300
 
 for a, b in segments:
     for i in range(a, b + 1):
