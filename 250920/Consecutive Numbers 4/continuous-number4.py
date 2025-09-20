@@ -8,10 +8,10 @@ cur = 1
 # 1 5 2 3 5 8 8
 # 4
 
-for i in range(1, ㅜ):
-    if arr[i-1] < arr[i]:
+for i in range(1, n):
+    if arr[i] > arr[i-1]:
         cur += 1
-        ans(ans, cur)
+        ans = max(ans, cur)
     else:
         cur = 1
 
